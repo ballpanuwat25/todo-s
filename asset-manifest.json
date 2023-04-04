@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/todo-s/static/css/main.c824c6df.css",
+    "main.js": "/todo-s/static/js/main.67d9f0a8.js",
+    "static/media/Kanit.ttf": "/todo-s/static/media/Kanit.f3bae13d78ced30b6ea3.ttf",
+    "static/media/Gilroy-ExtraBold.otf": "/todo-s/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
+    "static/media/Gilroy-Light.otf": "/todo-s/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
+    "index.html": "/todo-s/index.html",
+    "main.c824c6df.css.map": "/todo-s/static/css/main.c824c6df.css.map",
+    "main.67d9f0a8.js.map": "/todo-s/static/js/main.67d9f0a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c824c6df.css",
+    "static/js/main.67d9f0a8.js"
+  ]
+}

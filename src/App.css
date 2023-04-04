@@ -1,38 +1,408 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: "GilroyBold";
+    src: url("../src/assets/font/Gilroy-ExtraBold.otf") format("truetype");
+    font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "GilroyLight";
+    src: url("../src/assets/font/Gilroy-Light.otf") format("truetype");
+    font-weight: light;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+    font-family: "Kanit";
+    src: url("../src/assets/font/Kanit.ttf");
   }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+hr{
+    margin: 0 3rem 1rem 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+    margin: 0 3rem;
+    font-family: GilroyBold;
+    font-size: 8rem;
+    transition: 1s ease;
+    color: rgb(41, 41, 41);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1:hover{
+    text-decoration: line-through solid red .25rem;
+    transition: 1s ease;
+}
+
+h2{
+    font-family: GilroyLight;
+    font-size: 2.5rem;
+    color: rgb(41, 41, 41);
+}
+
+h3{
+    font-family: GilroyBold;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(41, 41, 41);
+}
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0px;
+    margin: .2rem;
+}
+
+input{
+    position: relative;
+    top: -6px;
+    height: 30px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: transparent;
+}
+
+input:focus{
+    outline: none;
+}
+
+a{
+    margin-top: .25rem;
+    margin-left: .5rem;
+    font-size: medium;
+    font-family: GilroyLight;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}
+
+span{
+    margin-top: .25rem;
+    margin-left: .5rem;
+    font-size: medium;
+    font-family: Kanit;
+}
+
+input[type="text"]{
+    font-size: medium;
+    font-family: Kanit;
   }
-  to {
-    transform: rotate(360deg);
+
+input[type="text"]:focus {
+    font-size: medium;
+    font-family: Kanit;
   }
+
+::-webkit-input-placeholder {
+    text-align: end;
+    font-family: GilroyLight;
+    font-size: .75rem;
+    font-weight: bold;
+    color: rgb(41, 41, 41);
+  }
+  
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.col-1{
+    height: 710px;
+    width: 50%;
+
+    margin: 0 3rem;
+    padding-right: 4rem;
+}
+
+.col-2{
+    height: 710px;
+    width: 50%;
+
+    margin: 0 3rem 3rem 0;
+    padding: 1rem;
+    overflow: scroll;
+}
+
+.subtitle{
+    font-family: GilroyLight;
+    font-size: 1rem;
+    text-indent: 4rem;
+}
+
+.unlist{
+    list-style: square;
+    font-family: GilroyLight;
+    font-weight: bold;
+    padding: 0 1rem;
+    text-indent: 1.5rem;
+}
+
+.list{
+    margin: .75rem;
+}
+
+.task-list{
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 2px 5px rgba(9, 45, 66, 0.25);
+  margin-left: 3rem;
+  margin-bottom: 8px;
+  height: 50px; 
+  font-family: GilroyLight;
+  font-weight: bold;
+  list-style: square;
+}
+
+.highlight{
+    font-family: GilroyBold;
+    color: rgb(41, 41, 41);
+}
+
+.contact-icon{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-icon .icon{
+    margin: 3rem 1rem 1rem 1rem;
+    width: 30px;
+    height: 30px;
+    box-shadow: 3px 2px 6px rgba(9, 45, 66, 0.25);
+    border-radius: 3px;
+    font-size: x-large;
+    transition: 1s ease;
+    color: rgb(41, 41, 41);
+    overflow: hidden;
+    display: flex;
+}
+
+.contact-icon .icon:hover{
+    width: 190px;
+    transition: .5s ease;
+}
+
+.icon:hover:nth-child(2){
+    width: 305px;
+
+}
+
+.icon:hover:nth-child(3){
+    width: 370px;
+}
+
+.bxl-github{
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.bxl-facebook-circle{
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.bxl-gmail{
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-add{
+    font-size: x-large;
+    margin: .5rem;
+    padding: .1rem;
+    font-family: GilroyLight;
+    text-align: center;
+    width: 30px;
+    transition: 1s ease;
+    border-radius: 3px;
+}
+
+.button-add:hover{
+    box-shadow: 3px 2px 6px rgba(9, 45, 66, 0.25);
+    transition: .5s ease;
+}
+
+.button-edit{
+    font-size: x-large;
+    font-family: GilroyLight;
+    text-align: center;
+}
+
+.button-delete{
+    font-size: x-large;
+    font-family: GilroyLight;
+    text-align: center;
+}
+
+.button-complete{
+    top: -.125rem;
+    position: relative;
+    font-family: GilroyLight;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.button-complete:hover{
+    text-decoration: 2px underline;
+}
+
+.button-update{
+    font-size: medium;
+    font-family: GilroyLight;
+    font-weight: bolder;
+}
+
+.button-cancel{
+    font-size: medium;
+    font-family: GilroyLight;
+}
+
+.display{
+    width: 100%;
+    height: auto;
+}
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    display: block;
+    border-radius: 0;
+    mix-blend-mode: difference;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999;  
+  }
+  
+.circle {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    background-color: #fff;
+  }
+
+@media screen and (max-width: 1700px) {
+
+    h1{
+        font-size: 5.5rem;
+    }
+
+    h1:hover{
+    text-decoration: line-through solid red .25rem;
+    transition: 1s ease;
+}
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    .contact-icon{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1185px) {
+
+    .cursor{
+        visibility: hidden;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    li{
+        text-indent: 0;
+    }
+
+    .col-1{
+        width: 95%;
+        height: fit-content;
+        margin-right: 48;
+        padding-right: 1rem;
+    }
+
+    .col-2{
+        width: 100%;
+    }
+    
+    .contact-icon{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .col-1{
+        width: auto;
+    }
+
+    .subtitle{
+        text-indent: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    input{
+        width: 150px;
+    }
+    
+    h3{
+        font-size: 1.25rem;
+        margin-top: .5rem;
+    }
+
+    li{
+        font-size: .8rem;
+    }
+
+    .highlight{
+        font-size: .9rem;
+    }
+
+    .subtitle{
+        font-size: .8rem;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .button-update{
+        font-size: .8rem;
+    }
+    
+    .button-cancel{
+        font-size: .8rem;
+    }
 }

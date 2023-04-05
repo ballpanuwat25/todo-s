@@ -142,7 +142,7 @@ function App() {
               </span>
             </a>
 
-            <a href='https://www.facebook.com/BallPanuwat00/' className='icon'>
+            <a href='https://www.facebook.com/BallPanuwat00' className='icon'>
               <i className='bx bxl-facebook-circle' ></i>
               <span>
                 https://www.facebook.com/BallPanuwat00
@@ -203,7 +203,7 @@ function App() {
                               ) : (
                                 <div key={task.id} style={{ textDecoration: task.completed ? "1px solid red line-through" : "none", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                                   <span> {task.content} </span>
-                                <div>
+                                <div className='button-group'>
                                   <button className='button-complete' onClick={() => handleToggleComplete(task.id)}> Done </button>
                                   <button className='button-edit' onClick={() => handleEditTask(task)}> <i className='bx bx-pencil' ></i> </button>
                                   <button className='button-delete' onClick={() => handleDeleteTask(task.id)}> <i className='bx bx-trash'></i> </button>
@@ -221,8 +221,22 @@ function App() {
                 )}
               </Droppable>
             </DragDropContext>
+
           </div>
         </div>
+        <div className='hidden-icon'>
+            <a href="mailto:panuwat.pis@ku.th" className='hdicon'>
+                <i className='bx bxl-gmail' ></i>
+            </a>
+
+            <a href='https://github.com/ballpanuwat25' className='hdicon'>
+              <i className='bx bxl-github' ></i>
+            </a>
+
+            <a href='https://www.facebook.com/BallPanuwat00' className='hdicon'>
+              <i className='bx bxl-facebook-circle' ></i>
+            </a>
+          </div>
       </div>
     </>
   );

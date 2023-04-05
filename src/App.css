@@ -229,11 +229,6 @@ input[type="text"]:focus {
     border-radius: 3px;
 }
 
-.button-add:hover{
-    box-shadow: 3px 2px 6px rgba(9, 45, 66, 0.25);
-    transition: .5s ease;
-}
-
 .button-edit{
     font-size: x-large;
     font-family: GilroyLight;
@@ -255,10 +250,6 @@ input[type="text"]:focus {
     text-align: center;
 }
 
-.button-complete:hover{
-    text-decoration: 2px underline;
-}
-
 .button-update{
     font-size: medium;
     font-family: GilroyLight;
@@ -270,9 +261,33 @@ input[type="text"]:focus {
     font-family: GilroyLight;
 }
 
+.button-group{
+    display: flex;
+    flex-direction: row;
+}
+
 .display{
     width: 100%;
     height: auto;
+}
+
+.hidden-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.hidden-icon .hdicon{
+    margin: 0 1rem 3rem 1rem;
+    width: 30px;
+    height: 30px;
+    box-shadow: 3px 2px 6px rgba(9, 45, 66, 0.25);
+    border-radius: 3px;
+    font-size: x-large;
+    transition: 1s ease;
+    color: rgb(41, 41, 41);
+    overflow: hidden;
 }
 
 .cursor {
@@ -302,7 +317,6 @@ input[type="text"]:focus {
     }
 
     h1:hover{
-    text-decoration: line-through solid red .25rem;
     transition: 1s ease;
 }
 
@@ -322,16 +336,20 @@ input[type="text"]:focus {
 
 @media screen and (max-width: 1185px) {
 
+    li{
+        text-indent: 0;
+    }
+
+    h3{
+        margin-left: 1.125rem;
+    }
+
     .cursor{
         visibility: hidden;
     }
 
     .container{
         flex-direction: column;
-    }
-
-    li{
-        text-indent: 0;
     }
 
     .col-1{
@@ -342,12 +360,25 @@ input[type="text"]:focus {
     }
 
     .col-2{
+        position: relative;
+        top: -5rem;
         width: 100%;
+        margin-bottom: 0;
     }
     
     .contact-icon{
         justify-content: center;
+        visibility: hidden;
     }
+
+    .hidden-icon{
+        visibility: visible;
+    }
+
+    .task-list{
+        height: fit-content;
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -371,16 +402,21 @@ input[type="text"]:focus {
     .subtitle{
         text-indent: 20px;
     }
+
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
+
+    form{
+        margin-top: 10px;
+        display: flex;
+    }
 
     input{
         width: 150px;
     }
     
     h3{
-        font-size: 1.25rem;
         margin-top: .5rem;
     }
 
@@ -398,6 +434,10 @@ input[type="text"]:focus {
         padding-left: 20px;
     }
 
+    .button-add{
+        margin-top: 0;
+    }
+
     .button-update{
         font-size: .8rem;
     }
@@ -405,4 +445,13 @@ input[type="text"]:focus {
     .button-cancel{
         font-size: .8rem;
     }
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    h3{
+        font-size: 1.125rem;
+    }
+
 }

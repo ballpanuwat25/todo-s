@@ -40,10 +40,6 @@ The following dependencies are used in this project:
 -   `react-scripts`: A set of scripts for building and running React applications.
 -   `react-beautiful-dnd`: A library for adding drag-and-drop functionality to React applications.
 
-## Contributing
-
-Contributions are welcome! To contribute, please fork the repository, make your changes, and submit a pull request.
-
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more information.

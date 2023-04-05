@@ -159,6 +159,7 @@ input[type="text"]:focus {
   font-family: GilroyLight;
   font-weight: bold;
   list-style: square;
+  height: fit-content;
 }
 
 .highlight{
@@ -264,6 +265,8 @@ input[type="text"]:focus {
 .button-group{
     display: flex;
     flex-direction: row;
+    margin-left: .75rem;
+    margin-top: .5rem;
 }
 
 .display{
@@ -375,9 +378,6 @@ input[type="text"]:focus {
         visibility: visible;
     }
 
-    .task-list{
-        height: fit-content;
-    }
     
 }
 

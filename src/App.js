@@ -229,7 +229,7 @@ function App() {
                 <i className='bx bxl-gmail' ></i>
             </a>
 
-            <a href='https://github.com/ballpanuwat25' className='hdicon'>
+            <a href='https://github.com/ballpanuwat25/todo-s' className='hdicon'>
               <i className='bx bxl-github' ></i>
             </a>
 

@@ -109,6 +109,11 @@ input[type="text"]:focus {
     font-weight: bold;
     color: rgb(41, 41, 41);
   }
+
+::selection{
+    background-color: black;
+    color: #fff;
+}
   
 .container{
     display: flex;

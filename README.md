@@ -20,8 +20,8 @@ To use the website, you can either visit the live demo or run it locally on your
     
 2.  Install the dependencies:
     
-    `cd todo-list`
-   `npm i react-beautiful-dnd` 
+    `cd todo-list` <br/>
+    `npm i react-beautiful-dnd` 
     
 3.  Start the development server:
 

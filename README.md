@@ -16,8 +16,7 @@ To use the website, you can either visit the live demo or run it locally on your
 
 1.  Clone the repository:
     
-    `git clone https://github.com/ballpanuwat25/todo-s
-.git` 
+    `git clone https://github.com/ballpanuwat25/todo-s.git` 
     
 2.  Install the dependencies:
     
